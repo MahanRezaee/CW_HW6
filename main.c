@@ -9,7 +9,7 @@ int main()
     int light[n];
     for(int x=0; x<n; x++)
     {
-        light[x]= 3;
+        light[x]= 1;
     }
 
     for(int i=0;i<n; i++)
@@ -33,7 +33,7 @@ int main()
                         f2 = 1;
                 }
             }
-           if(f1 == 0 || f2 == 0)    light[i]= 0;
+           if(f1 ==0 || f2 == 0)    light[i]= 0;
            f1 = 0;
            f2 = 0;
         }
@@ -41,7 +41,7 @@ int main()
 
     for(int i=0; i<n; i++)
     {
-        if(light[i] == 3)
+        if(light[i] == 1)
             printf("YES\n");
         else
             printf("NO\n");
